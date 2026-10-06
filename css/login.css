@@ -1,0 +1,34 @@
+/* Bootstrap grid-free split layout: .d-flex panels, .form-control, .form-check and a recoloured .btn. */
+.sp{--sp-brand:#4f46e5;--sp-brand-dark:#4338ca;--sp-brand2:#7c3aed;
+  --bs-body-color:#111827;--bs-secondary-color:#6b7280;--bs-border-color:#8b93a1;--bs-link-color-rgb:79,70,229;--bs-link-hover-color-rgb:79,70,229;
+  --bs-body-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  min-height:100vh;background:#fff;color:var(--bs-body-color);font-family:var(--bs-body-font-family);line-height:normal}
+.sp-panel{flex:1;padding:56px;background:linear-gradient(135deg,var(--sp-brand),var(--sp-brand2))}
+.sp-logo{font-weight:800;font-size:1.25rem;letter-spacing:-.02em}
+.sp-panel h2{font-size:2.1rem;line-height:1.2;letter-spacing:-.03em;max-width:22ch;font-weight:700}
+.sp-panel p{opacity:.9;max-width:40ch;line-height:1.6}
+.sp-main{flex:1;padding:32px}
+.sp-form{max-width:380px}
+.sp-form h1{font-size:1.6rem;letter-spacing:-.02em;font-weight:700}
+.sp .form-label{font-size:.85rem;font-weight:600;margin-bottom:6px}
+.sp .form-control{padding:12px 14px;border-radius:10px;font-size:.95rem;line-height:1.2}
+.sp .form-control::placeholder{color:#6b7280}
+.sp .form-control:focus{border-color:var(--sp-brand);box-shadow:0 0 0 3px rgba(79,70,229,.25)}
+.sp .form-check{min-height:0}
+.sp .form-check-input{width:16px;height:16px;margin-top:0;border-color:#767676}
+.sp .form-check-input:checked{background-color:var(--sp-brand);border-color:var(--sp-brand)}
+.sp .form-check-input:focus{box-shadow:none;border-color:#767676}
+.sp .form-check-input:focus-visible{outline:2px solid var(--sp-brand);outline-offset:2px}
+.sp a{font-weight:600;text-decoration:none;border-radius:3px}
+.sp a:hover{text-decoration:underline}
+.sp a:focus-visible{outline:2px solid var(--sp-brand);outline-offset:2px}
+.sp .btn-sp{--bs-btn-bg:var(--sp-brand);--bs-btn-border-color:var(--sp-brand);--bs-btn-color:#fff;
+  --bs-btn-hover-bg:var(--sp-brand-dark);--bs-btn-hover-border-color:var(--sp-brand-dark);--bs-btn-hover-color:#fff;
+  --bs-btn-active-bg:var(--sp-brand-dark);--bs-btn-active-border-color:var(--sp-brand-dark);--bs-btn-active-color:#fff;
+  --bs-btn-padding-y:13px;--bs-btn-font-size:.98rem;--bs-btn-font-weight:700;--bs-btn-border-radius:10px;--bs-btn-line-height:1.2;
+  --bs-btn-focus-box-shadow:none}
+.sp .btn-sp:focus-visible{outline:2px solid var(--sp-brand);outline-offset:2px}
+.sp-sub{font-size:.95rem}
+.sp-foot{font-size:.9rem}
+@media (min-width:880px){.sp-panel{display:flex!important}}
+@media (prefers-reduced-motion:reduce){.sp .form-control,.sp .btn{transition:none}}
