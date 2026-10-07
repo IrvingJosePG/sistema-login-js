@@ -4,7 +4,7 @@
 * **Proyecto:** Sistema de Control Estudiantil.
 * **Integrantes del Equipo (33/33/33):**
   1. **Irving José Pérez Gris:** Login y validaciones.
-  2. **[Integrante 2]:** Sidebar, Navbar y sesión.
+  2. **Fernández López Jazmín:** Sidebar, Navbar y sesión.
   3. **Sandoval Reyes Miguel:** Formularios internos y modal.
 * **Descripción breve:** Aplicación web interactiva que simula el flujo completo de un sistema de administración escolar. Incluye una pantalla de acceso validada y un panel de control interactivo, gestionando la sesión temporal del usuario.
 
