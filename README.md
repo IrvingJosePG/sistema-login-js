@@ -25,7 +25,12 @@
 1. **Configuración del Repositorio:** Creación de la estructura de carpetas (`css`, `js`, `img`) e inicialización del repositorio en GitHub.
 2. **Interfaz de Acceso:** Diseño e implementación de un patrón "Split-Screen" moderno en `login.html`, adaptando los colores corporativos y los textos al contexto.
 3. **Lógica de Autenticación:** Se programó el archivo `login.js` para interceptar el formulario, ejecutar las validaciones estrictas y gestionar el `localStorage`.
+# Fase 2: Navbar y sidebar( Fernández López Jazmín)
 
+1. Se creó `index.html` y se agregó Bootstrap con CDN.
+2. Se hizo navbar con el botón ☰, el nombre del sistema, el usuario y el botón **Salir**.
+3. Se hizo el menú de la izquierda (sidebar), que se abre y se cierra con el botón ☰.
+4. Dentro del menú se puso **Usuarios > Captura**, que se despliega al darle clic
 ### Fase 3: Formularios Internos y Modal (Por Sandoval Reyes Miguel)
 1. **Captura de Usuarios:** Se agregó dentro de `index.html` un formulario con los campos Usuario, Correo electrónico y Contraseña.
 2. **Validación de Usuarios:** En `js/index.js` se utiliza `validarCorreo()` para comprobar el correo y `validarPassword()` para verificar la contraseña antes de aceptar la captura.
