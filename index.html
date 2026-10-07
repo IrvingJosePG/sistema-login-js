@@ -50,8 +50,78 @@
     <h1 class="h3">Bienvenido, <span id="saludoUsuario"></span></h1>
     <p class="text-muted">Selecciona una opción del menú</p>
 
-    <!-- Aquí van los formularios y el modal, compañerito -->
+    <div class="row g-4 mt-2">
+      <section id="captura" class="col-lg-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body p-4">
+            <h2 class="h5 mb-3">Captura de Usuarios</h2>
+
+            <form id="formUsuario">
+              <div class="mb-3">
+                <label for="usuarioCaptura" class="form-label">Usuario</label>
+                <input type="text" class="form-control" id="usuarioCaptura" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="correoCaptura" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="correoCaptura" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="passwordCaptura" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="passwordCaptura" required>
+              </div>
+
+              <div id="mensajeUsuario" class="alert d-none" role="alert"></div>
+
+              <button type="submit" class="btn btn-primary">Guardar usuario</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="alumnos" class="col-lg-6">
+        <div class="card shadow-sm border-0 h-100">
+          <div class="card-body p-4">
+            <h2 class="h5 mb-3">Formulario de Alumnos</h2>
+
+            <form id="formAlumno">
+              <div class="mb-3">
+                <label for="numeroControl" class="form-label">Número de control</label>
+                <input type="text" class="form-control" id="numeroControl" maxlength="6" inputmode="numeric" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fechaNacimiento" required>
+              </div>
+
+              <div id="mensajeAlumno" class="alert alert-danger d-none" role="alert"></div>
+
+              <button type="submit" class="btn btn-primary">Validar alumno</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
+
+  <div class="modal fade" id="modalEdad" tabindex="-1" aria-labelledby="tituloModalEdad" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="tituloModalEdad">Resultado de edad</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <p id="textoModalEdad" class="mb-0"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/IrvingJosePG/Utileria-JS@main/js/utileria.js"></script>
