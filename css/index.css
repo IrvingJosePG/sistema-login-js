@@ -1,0 +1,72 @@
+body {
+  background-color: #fff5f8;
+  color: #0e0408;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
+
+
+#barraSuperior {
+  background-color: #f8c8dc;
+}
+
+#barraSuperior .navbar-brand,
+#barraSuperior .nav-link {
+  color: #7a2e4d;
+}
+
+.boton-menu {
+  background-color: #7a2e4d;
+  border: 1px solid #7a2e4d;
+  color: white;
+}
+
+.boton-menu:hover {
+  background-color: #5c2039;
+  border-color: #5c2039;
+  color: white;
+}
+
+#menuLateral {
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  background-color: #fde2ec;
+  transition: margin-left 0.3s;
+}
+
+#menuLateral .nav-link {
+  color: #7a2e4d;
+}
+
+#menuLateral .nav-link:hover {
+  background-color: #f8c8dc;
+}
+
+
+#contenido {
+  margin-left: 250px;
+  padding: 80px 24px 24px 24px;
+  transition: margin-left 0.3s;
+}
+
+
+body.menu-oculto #menuLateral {
+  margin-left: -250px;
+}
+
+body.menu-oculto #contenido {
+  margin-left: 0;
+}
+
+#botonSalir {
+  color: black;
+  border: 2px solid black;
+}
+
+#botonSalir:hover {
+  background-color: #f8c8dc;
+  color: black;
+}
